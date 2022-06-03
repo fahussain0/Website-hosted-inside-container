@@ -1,7 +1,6 @@
 # Docker Website hosting inside a container
 
-	1. Install docker on ubuntu via CLI
-	
+1. Install docker on ubuntu via CLI
 	For Reference: 
 	
 		https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
@@ -18,9 +17,10 @@
 
 		$ docker exec -it container_NameOR_ID /bin/bash
 
-	After getting inside running container start creating layers over the running container.
-
-	4. Update ubuntu container and Install nginx inside container
+>		After getting inside running container start creating layers over the running container.
+	
+	
+4. Update ubuntu container and Install nginx inside container
 
 		# apt-get update | apt-get install nginx -y
 
@@ -44,7 +44,7 @@
 
 	9.  Now follow Points 9 and 10 from this README.md of my other wonderful project for website deployment:
 
-	https://github.com/fahussain0/nginx_deployment/blob/main/README.md
+		https://github.com/fahussain0/nginx_deployment/blob/main/README.md
 
 	10. My current scenario is like:
 		I have,
@@ -59,6 +59,6 @@
 			On Container open /etc/hosts file and add following:
 				Container_IP      test_domain.com www.test_domain.com
 
-		Note: You can check container's ip by using this command
+>		Note: You can check container's ip by using this command
 
 			$ docker inspect 6107bcccb658
