@@ -2,14 +2,14 @@
 
 1. Install docker on ubuntu via CLI
 	For Reference: 
-	
+
 		https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 	
-	2. Verify docker installation using 
+2. Verify docker installation using 
 	
 		$ sudo docker run hello-world
 
-	3. Run container with following settings
+3. Run container with following settings
 
 		$ docker run -it -p 80:80 --name nginx_container ubuntu:20.04
 
@@ -24,29 +24,30 @@
 
 		# apt-get update | apt-get install nginx -y
 
-	5. Now verify nginx is running or not
+5. Now verify nginx is running or not
 
 		$ service nginx enable
 		$ service nginx start
 		$ service nginx status
 
-	6. Now install vim to edit text files inside container
+6. Now install vim to edit text files inside container
 
 		$ apt-get install vim
 
-	7. Now we will install curl to test website inside container
+7. Now we will install curl to test website inside container
 
 		$ apt-get install curl
 
-	8. Now we will install git to push website from github
+8. Now we will install git to push website from github
 
 		$ apt-get install git
 
-	9.  Now follow Points 9 and 10 from this README.md of my other wonderful project for website deployment:
+9.  Now follow Points 9 and 10 from this README.md of my other wonderful project for website deployment:
 
 		https://github.com/fahussain0/nginx_deployment/blob/main/README.md
 
-	10. My current scenario is like:
+10. My current scenario is like:
+	
 		I have,
 			Container running on Docker
 			Docker running on Ubuntu VM in Virtualbox
