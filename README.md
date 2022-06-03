@@ -46,3 +46,19 @@
 
 	https://github.com/fahussain0/nginx_deployment/blob/main/README.md
 
+	10. My current scenario is like:
+		I have,
+			Container running on Docker
+			Docker running on Ubuntu VM in Virtualbox
+			Virtualbox running on Macbook 11.6
+		Now, 
+			On Macbook OS open /etc/hosts file and add following:
+				UbuntuVM_IP      test_domain.com www.test_domain.com
+			On UbuntuVM open /etc/hosts file and add following:
+				Container_IP      test_domain.com www.test_domain.com
+			On Container open /etc/hosts file and add following:
+				Container_IP      test_domain.com www.test_domain.com
+
+		Note: You can check container's ip by using this command
+
+			$ docker inspect 6107bcccb658
