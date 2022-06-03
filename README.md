@@ -38,7 +38,11 @@
 
 		$ apt-get install curl
 
-	8. Now follow Points 9 and 10 from this README.md of my other wonderful project for website deployment:
+	8. Now we will install git to push website from github
+
+		$ apt-get install git
+
+	9.  Now follow Points 9 and 10 from this README.md of my other wonderful project for website deployment:
 
 	https://github.com/fahussain0/nginx_deployment/blob/main/README.md
 
