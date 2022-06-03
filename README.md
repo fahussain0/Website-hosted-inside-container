@@ -19,3 +19,23 @@
 	$ docker exec -it container_NameOR_ID /bin/bash
 
 	After getting inside running container start creating layers over the running container.
+
+	4. Update ubuntu container and Install nginx inside container
+
+	# apt-get update | apt-get install nginx -y
+
+	5. Now verify nginx is running or not
+
+	$ service nginx enable
+	$ service nginx start
+	$ service nginx status
+
+	6. Now install vim to edit text files inside container
+
+	$ apt-get install vim
+
+	7. Now we will install curl to test website inside container
+
+	$ apt-get install curl
+
+
